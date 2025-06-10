@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+
+        <button class="clearBtn" onclick="clearDisplay()">AC</button>
+
+        <div id="keys">
+        
+        <button onclick="appendUp('7')">7</button>
+        <button onclick="appendUp('8')">8</button>
+        <button onclick="appendUp('9')">9</button>
+        <button class="operatorBtn" onclick="appendUp('+')">+</button>
+        
+        <button onclick="appendUp('4')">4</button>
+        <button onclick="appendUp('5')">5</button>
+        <button onclick="appendUp('6')">6</button>
+        <button class="operatorBtn" onclick="appendUp('-')">-</button>
+        
+        <button onclick="appendUp('1')">1</button>
+        <button onclick="appendUp('2')">2</button>
+        <button onclick="appendUp('3')">3</button>
+        <button class="operatorBtn" onclick="appendUp('*')">*</button>
+        
+        <button onclick="appendUp('.')">.</button>
+        <button onclick="appendUp('0')">0</button>
+        <button class="operatorBtn" onclick="calculate()">=</button>
+        <button class="operatorBtn" onclick="appendUp('/')">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
